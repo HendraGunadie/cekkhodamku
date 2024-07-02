@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Khodam</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS@1.4/social-share.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS@1.4/social-share.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Cek Khodam Ku</h1>
+            <p>Cek khodam ini 100% real dari dukun asli | cekkhodamku.site</p>
+                <div class="search">
+                    <form>
+                        <input class="inputKhodam" type="text" name="search" id="search" placeholder="Tulis Nama Kamu ">
+                        <button id="btn-search" style="--clr:yellow;" >Cek Khodam</button>
+                    </form>
+                </div>
+                    
+                <div class="loading">
+                    <div class="bar">
+                        <div class="fill"></div>
+                    </div>
+                        <div class="counter">0%</div>
+                        <div class="counter">Proses Pengecekan Oleh Dukun, <br>
+                            Semoga Berhasil !!
+                        </div>
+                </div>
+
+                <div class="output">
+                    <span class="fa fa-check" style="color: yellow;"></span>
+                    <div class="hasil">
+                        <p id="result"></p>
+                    </div>
+                </div>
+
+            
+             
+                    <button class="refreshButton"  style="--clr:yellow;" onclick="window.location.reload()">Cek Khodam Lagi !!</button>
+      
+          
+        </div>
+    </div>
+
+    <div class="sosmed">
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="https://www.instagram.com/hendragunadiee?igsh=MW0xMnQ0b2NsMm9iNA==" class="insta"><h2>instagram</h2></a>
+        <br>
+        <div class="ss-box ss-btn-share ss-black" data-ss-social="share" id="shareBtn"></div>
+        <br>
+        <a href="https://www.tiktok.com/@hendragunadie?_t=8ndzUHCrBrD&_r=1" class="tiktok"><h2>tiktok</h2></a>
+    </div>
+
+    <script src="./assets/main.js"></script>
+</body>
+</html>

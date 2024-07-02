@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    posisition : relative;
+    margin: 0;
+    padding:0;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+
+}
+
+body::before{
+    content : "";
+    position : fixed;
+    top : 0;
+    left : 0;
+    height: 100%;
+    width:100%;
+    background-image : url("./img/dukun.jpeg");
+    background-size : cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position : center;
+    z-index : -1;
+    filter:blur(10px);
+}
+
+.container {
+    color : white;
+    display : flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100vh;
+}
+
+.header {
+    text-align : center
+    
+}
+
+.header h1 {
+    color : ;
+    text-shadow: #B8860B 1px 2px;
+}
+
+.header p {
+    font-size: 1rem;
+}
+
+.search {
+    display : flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+#search {
+    width:100%;
+    height:30px;
+    border-radius:5px;
+    text-align:center;
+    font-size: 1.2rem;
+    outline : none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+  
+
+}
+
+.inputKhodam {
+    border: 2px solid white;
+    border-radius: 4px;
+  
+}
+
+#btn-search {
+    background : transparent;
+    border : 2px solid var(--clr);
+    color : white;
+    padding : 10px 20px;
+    margin : 5px;
+    border-radius:10px;
+    outline:none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition : 1s;
+    cursor : pointer;
+    
+}
+
+#btn-search:hover {
+    background-color:var(--clr);
+    box-shadow : 0 0 25px var(--clr),
+    0 0 100px var(--clr),
+    0 0 150px var(--clr);
+    color : black;
+}
+
+.hasil p {
+ 
+    margin :10px auto;
+    padding: 2px 10px;
+    color : #BDB76B;
+    text-shadow: #8B4513 2px 2px;
+    font-weight:bold;
+    font-size: 2rem;
+}
+
+.sosmed {
+    margin-top : -130px;
+    display : flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.insta {
+    padding : 2px 5px;
+    border-radius : 10px;
+    background : #1b1919;
+    transition : 1s;
+    margin-right :20px;
+    color : #BDB76B;
+    text-shadow: #8B4513 1px 1px;
+    box-shadow : 0 0 30px rgba(1,1,1,1);
+    font-size: 0.8rem;
+}
+
+
+.tiktok {
+    padding : 2px 20px;
+    border-radius : 10px;
+    background : #1b1919;
+    transition : 1s;
+    margin-left : 20px;
+    color : #BDB76B;
+    text-shadow: #8B4513 1px 1px;
+    box-shadow : 0 0 30px rgba(1,1,1,1);
+    font-size: 0.8rem;
+}
+
+
+.insta:hover {
+    color : #B8860B;
+    background-color: #b6b6b6;
+    box-shadow : 0 0 25px #b6b6b6,
+    0 0 100px #b6b6b6,
+    0 0 150px #b6b6b6;
+
+}
+
+#shareBtn:hover {
+    color : #B8860B;
+    background-color: #b6b6b6;
+    box-shadow : 0 0 25px #b6b6b6,
+    0 0 100px #b6b6b6,
+    0 0 150px #b6b6b6;
+    border-radius : 5px;
+}
+
+.tiktok:hover {
+    color : #B8860B;
+    background-color: #b6b6b6;
+    box-shadow : 0 0 25px #b6b6b6,
+    0 0 100px #b6b6b6,
+    0 0 150px #b6b6b6;
+6;
+}
+
+.loading {
+    width : 70%;
+    display : none;
+    padding : 10px 0;
+    background-color : #1b1919;
+    box-shadow : 0 0 30px rgba(1,1,1,1);
+    border-radius : 5px;
+    text-align : center;
+    margin : auto;
+
+}
+
+.bar {
+    background : #b6b6b6;
+    width : 90%;
+    height : 20px;
+    margin : 10px auto;
+    border-radius : 50px;
+    overflow : hidden;
+}
+
+.fill {
+    height : 100%;
+    width : 1%;
+    background : linear-gradient(45deg,#BDB76B, #B8860B)
+}
+
+.counter {
+    font-family : "Kanit", sans-serif;
+    color :#BDB76B;
+    padding : 5px auto;
+
+}
+
+.output {
+    display : none;
+    width : 70%;
+    padding : 30px 0;
+    background-color : #1b1919;
+    box-shadow : 0 0 30px rgba(0,0,0,1);
+    border-radius : 5px;
+    text-align : center;
+    margin : auto;
+}
+
+.textOutput {
+    font-family : "Kanit", sans-serif;
+    color :#BDB76B;
+    padding : 5px auto;
+}
+
+
+
+.refreshButton{
+    display:none;
+    padding : 10px 20px;
+    margin : 5px auto;
+    border-radius:10px;
+    outline:none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    background : transparent;
+    border : 2px solid var(--clr);
+    color : white;
+    text-transform: uppercase;
+    transition : 1s;
+    cursor : pointer;
+}
+
+.refreshButton:hover {
+    background-color:var(--clr);
+    box-shadow : 0 0 25px var(--clr),
+    0 0 100px var(--clr),
+    0 0 150px var(--clr);
+    color : black;
+}
+
+
+padding : 10px 20px;
+margin : 5px;
+border-radius:10px;
+outline:none;
+font-family: "Kanit", sans-serif;
+font-weight: 500;
